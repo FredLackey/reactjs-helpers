@@ -1,0 +1,21 @@
+{
+  "name"       : "reactjs-helpers",
+  "version"    : "0.0.0",
+  "description": "Helpful utilities and scripts to make ReactJS projects more legible and easier for the next developer to take over.",
+  "main"       : "index.js",
+  "type"       : "module",
+  "scripts"    : {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author"  : {
+    "name" : "Fred Lackey",
+    "email": "fred.lackey@gmail.com",
+    "url"  : "http://fredlackey.com"
+  },
+  "license"        : "Apache-2.0",
+  "devDependencies": {
+    "jest" : "^29.7.0",
+    "react": "^18.2.0"
+  }
+}
