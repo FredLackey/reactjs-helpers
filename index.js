@@ -10,7 +10,7 @@ export {
   isObject,
   isUidFormat,
   isValidString,
-}
+};
 
 export default {
   getReactVersion,
