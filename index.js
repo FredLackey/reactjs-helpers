@@ -4,6 +4,14 @@ import isObject from "./utils/is-object";
 import isUidFormat from "./utils/is-uid-format";
 import isValidString from './utils/is-valid-string';
 
+export {
+  getReactVersion,
+  isAlphanumeric,
+  isObject,
+  isUidFormat,
+  isValidString,
+}
+
 export default {
   getReactVersion,
   isAlphanumeric,
