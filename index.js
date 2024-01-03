@@ -107,6 +107,9 @@ export { default as cleanAlphaNumeric } from "./src/clean-alphanumeric";
 export { default as getSubString } from "./src/get-substring";
 export { default as isAlphaNumeric } from "./src/is-alphanumeric";
 export { default as isPhone } from "./src/is-phone-number";
+export { default as first } from "./src/get-first";
+export { default as last } from "./src/get-last";
+export { default as single } from "./src/get-single";
 
 export {
   ALPHA,
