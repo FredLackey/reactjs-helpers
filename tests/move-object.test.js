@@ -2,9 +2,9 @@ import { describe, expect, it } from '@jest/globals';
 import { moveObject } from '../';
 
 describe('moveObject function', () => {
-  // Test case 1: Move an object from curPosition to newPosition
-  it('moves an object from curPosition to newPosition', () => {
-    const originalArray = [
+  // Test case 1: Move an object within the array
+  it('moves an object within the array', () => {
+    const arrayOfObjects = [
       { id: 1, name: 'Object 1' },
       { id: 2, name: 'Object 2' },
       { id: 3, name: 'Object 3' },
@@ -13,7 +13,7 @@ describe('moveObject function', () => {
     const curPosition = 1;
     const newPosition = 3;
 
-    const newArray = moveObject(originalArray, curPosition, newPosition);
+    const newArray = moveObject(arrayOfObjects, curPosition, newPosition);
 
     // Check if the object was moved correctly
     expect(newArray).toEqual([
@@ -25,47 +25,47 @@ describe('moveObject function', () => {
   });
 
   // Test case 2: Invalid curPosition
-  it('throws an error for an invalid curPosition', () => {
-    const originalArray = [
+  it('returns the original array for an invalid curPosition', () => {
+    const arrayOfObjects = [
       { id: 1, name: 'Object 1' },
       { id: 2, name: 'Object 2' },
     ];
     const curPosition = -1;
     const newPosition = 1;
 
-    // Expect an error to be thrown
-    expect(() => moveObject(originalArray, curPosition, newPosition)).toThrowError(
-      'Invalid positions'
-    );
+    const newArray = moveObject(arrayOfObjects, curPosition, newPosition);
+
+    // Expect the original array to be returned
+    expect(newArray).toBe(arrayOfObjects);
   });
 
   // Test case 3: Invalid newPosition
-  it('throws an error for an invalid newPosition', () => {
-    const originalArray = [
+  it('returns the original array for an invalid newPosition', () => {
+    const arrayOfObjects = [
       { id: 1, name: 'Object 1' },
       { id: 2, name: 'Object 2' },
     ];
     const curPosition = 0;
     const newPosition = 5;
 
-    // Expect an error to be thrown
-    expect(() => moveObject(originalArray, curPosition, newPosition)).toThrowError(
-      'Invalid positions'
-    );
+    const newArray = moveObject(arrayOfObjects, curPosition, newPosition);
+
+    // Expect the original array to be returned
+    expect(newArray).toBe(arrayOfObjects);
   });
 
-  // Test case 4: Moving to the same position
-  it('throws an error when moving to the same position', () => {
-    const originalArray = [
+  // Test case 4: Move to the same position
+  it('returns the original array when moving to the same position', () => {
+    const arrayOfObjects = [
       { id: 1, name: 'Object 1' },
       { id: 2, name: 'Object 2' },
     ];
     const curPosition = 0;
     const newPosition = 0;
 
-    // Expect an error to be thrown
-    expect(() => moveObject(originalArray, curPosition, newPosition)).toThrowError(
-      'Invalid positions'
-    );
+    const newArray = moveObject(arrayOfObjects, curPosition, newPosition);
+
+    // Expect the original array to be returned
+    expect(newArray).toBe(arrayOfObjects);
   });
 });

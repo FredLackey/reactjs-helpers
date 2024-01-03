@@ -6,7 +6,8 @@ const moveObject = (arrayOfObjects, curPosition, newPosition) => {
     newPosition >= arrayOfObjects.length ||
     curPosition === newPosition
   ) {
-    throw new Error('Invalid positions');
+    console.debug('Invalid positions');
+    return arrayOfObjects;
   }
 
   const newArray = [...arrayOfObjects]; // Create a shallow copy of the original array
