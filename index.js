@@ -65,6 +65,7 @@ export { default as isValidChars } from "./src/is-valid-chars";
 export { default as isValidPath } from "./src/is-valid-path";
 export { default as isValidString } from "./src/is-valid-string";
 export { default as isZeroDate } from "./src/is-zero-date";
+export { default as moveObject } from "./src/move-object";
 export { default as newCode } from "./src/new-code";
 export { default as newGuid } from "./src/new-guid";
 export { default as newSalt } from "./src/new-salt";
