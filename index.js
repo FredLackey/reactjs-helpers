@@ -3,7 +3,6 @@ export { default as cleanAlphanumeric } from "./src/clean-alphanumeric";
 export { default as cleanDigits } from "./src/clean-digits";
 export { default as cleanDto } from "./src/clean-dto";
 export { default as cleanString } from "./src/clean-string";
-export { default as copyContents } from "./src/copy-contents";
 export { default as copyFile } from "./src/copy-file";
 export { default as copyObject } from "./src/copy-object";
 export { default as createPath } from "./src/create-path";

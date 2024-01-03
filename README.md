@@ -4,7 +4,7 @@ Helpful utilities and scripts to make ReactJS projects more legible and easier f
 
 ## Current Status
 
-This project is currently under development and is not yet ready for use.  
+Based on the original [`cleaner-node`](https://www.npmjs.com/package/cleaner-node) project, this package intends to improve readability and maintainability of ReactJS projects by providing a set of utilities and scripts to help with common tasks.  
 
 ## Installation  
 
