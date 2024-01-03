@@ -1,4 +1,5 @@
-import isValidString from '../utils/is-valid-string';
+import { describe, expect, it } from '@jest/globals';
+import { isValidString } from '../';
 
 describe('isValidString', () => {
   it('should return true for a non-empty string', () => {

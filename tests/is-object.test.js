@@ -1,4 +1,5 @@
-import isObject from '../utils/is-object';
+import { describe, expect, it } from '@jest/globals';
+import { isObject } from '../';
 
 describe('isObject', () => {
   it('should return true for a plain object', () => {

@@ -1,4 +1,4 @@
-import getReactVersion from '../utils/get-react-version';
+import { getReactVersion } from '../';
 
 describe('getReactVersion', () => {
   it('should return the current React version', () => {

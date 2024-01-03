@@ -1,4 +1,5 @@
-import isUidFormat from "../utils/is-uid-format";
+import { describe, expect, it } from '@jest/globals';
+import { isUidFormat } from '../';
 
 describe('isUidFormat', () => {
 

@@ -9,13 +9,13 @@ This project is currently under development and is not yet ready for use.
 ## Installation  
 
 ```bash
-npm i nextjs-helpers
+npm i reactjs-helpers
 ```
 
 ... or ...
 
 ```bash
-npm install --save nextjs-helpers
+npm install --save reactjs-helpers
 ```
 
 ## Contact  

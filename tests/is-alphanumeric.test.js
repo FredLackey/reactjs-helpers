@@ -1,4 +1,4 @@
-import isAlphanumeric from '../utils/is-alphanumeric';
+import { isAlphanumeric } from '../';
 
 describe('isAlphanumeric', () => {
 
