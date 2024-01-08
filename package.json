@@ -1,6 +1,6 @@
 {
   "name"       : "reactjs-helpers",
-  "version"    : "0.0.7",
+  "version"    : "0.0.8",
   "description": "Helpful utilities and scripts to make ReactJS projects more legible and easier for the next developer to take over.",
   "main"       : "index.js",
   "type"       : "module",

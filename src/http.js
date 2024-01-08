@@ -9,12 +9,12 @@ const IS_EMPTY_STRING_OKAY = true;
 const toUrl = (value = '/') => {
 
   let url = value;
-  url = removePrefix(url, '/');
-  url = removeSuffix(url, '/');
+      url = removePrefix(url, '/');
+      url = removeSuffix(url, '/');
 
   return url.toLowerCase().startsWith('http')
     ? url
-    : `http://${url}`;
+    :  `http://${url}`;
 };
 const toBody = value => {
   if (isObject(value)) {
@@ -53,12 +53,15 @@ const doPromise = ({
   method = 'GET', url, data, creds = {}, headers = {},
 }) => {
   return fetch(toUrl(url), {
-    // credentials: 'same-origin', // 'include', default: 'omit'
+      // credentials: 'same-origin', // 'include', default: 'omit'
     method,
     body   : toBody(data),
     headers: addHeaders(creds, headers),
   })
-    .then(response => response.json())
+    .then(response => ({
+      status: response.status,
+      data  : response.json()
+    }))
     .catch(error => console.debug(error));
 };
 
