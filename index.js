@@ -57,6 +57,7 @@ export { default as isMatch } from "./src/is-match";
 export { default as isNumber } from "./src/is-number";
 export { default as isObject } from "./src/is-object";
 export { default as isPhoneNumber } from "./src/is-phone-number";
+export { default as isSameDate } from "./src/is-same-date";
 export { default as isSemver } from "./src/is-semver";
 export { default as isString } from "./src/is-string";
 export { default as isUidFormat } from "./src/is-uid-format";
